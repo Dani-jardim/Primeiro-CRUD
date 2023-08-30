@@ -1,3 +1,5 @@
+const { findAll, addNew, update, clear} = require("../controllers/techmaromba-controller")
+
 const express  = require("express")
 const router = express.Router()
 
