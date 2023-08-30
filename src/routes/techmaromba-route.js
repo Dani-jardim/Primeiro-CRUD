@@ -8,3 +8,5 @@ router.post("/add", addNew)
 router.patch("/update/:id", update)
 
 router.delete("/clear/:id", clear)
+
+module.exports = router
