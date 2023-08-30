@@ -1,3 +1,4 @@
+const TechMaromba = require("../models/TechMaromba")
 const { response } = require("../app");
 
 const findAll = async (request, response) => {
@@ -25,7 +26,7 @@ const addNew = async (request,response) => {
       description,
       urlProfile,
       urlImage,
-      createdAt: new Date[]
+      createdAt: new Date()
     })
     const result = await techMarombaCreated.save()
     response.status(201).json({TechMaromba: result})
