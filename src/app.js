@@ -1,3 +1,6 @@
+const swaggerUi = require("swagger-ui-express")
+const swaggerFile = require("../swagger/swagger_output.json")
+
 const express = require("express")
 const cors = require("cors")
 const techMarombaRoute = require("./routes/techmaromba-route")
@@ -11,5 +14,6 @@ app.use(cors())
 mongoose.connect()
 
 app.use("techMarombaRoute", techMarombaRoute)
+app.use("/doc", swaggerUi.serve, swaggerUi.setup(swaggerFile) )
 
 module.exports = app 
