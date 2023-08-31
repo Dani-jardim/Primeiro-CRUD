@@ -13,7 +13,7 @@ app.use(cors())
 
 mongoose.connect()
 
-app.use("techMarombaRoute", techMarombaRoute)
+app.use("/techmaromba", techMarombaRoute)
 app.use("/doc", swaggerUi.serve, swaggerUi.setup(swaggerFile) )
 
 module.exports = app 

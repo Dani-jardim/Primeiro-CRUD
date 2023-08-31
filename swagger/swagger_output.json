@@ -3,7 +3,7 @@
   "info": {
     "version": "1.0.0",
     "title": "REST API",
-    "description": "Api tech maromba"
+    "description": ""
   },
   "host": "localhost:3333",
   "basePath": "/",
@@ -11,7 +11,7 @@
     "http"
   ],
   "paths": {
-    "techMarombaRoute/all": {
+    "/techmaromba/all": {
       "get": {
         "description": "",
         "responses": {
@@ -24,7 +24,7 @@
         }
       }
     },
-    "techMarombaRoute/add": {
+    "/techmaromba/add": {
       "post": {
         "description": "",
         "parameters": [
@@ -60,7 +60,7 @@
         }
       }
     },
-    "techMarombaRoute/update/{id}": {
+    "/techmaromba/update/{id}": {
       "patch": {
         "description": "",
         "parameters": [
@@ -102,7 +102,7 @@
         }
       }
     },
-    "techMarombaRoute/clear/{id}": {
+    "/techmaromba/clear/{id}": {
       "delete": {
         "description": "",
         "parameters": [

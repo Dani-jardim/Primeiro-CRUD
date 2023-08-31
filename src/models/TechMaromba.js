@@ -3,7 +3,7 @@ const techMarombaSchema = mongoose.Schema(
   {
     _id: {
       type: mongoose.Schema.Types.ObjectId,
-      default: () => mongoose.Types.ObjectId()
+      default: () => new mongoose.Types.ObjectId()
     },
     name: {
       type: String,
