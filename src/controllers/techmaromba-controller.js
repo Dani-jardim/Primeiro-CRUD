@@ -66,7 +66,7 @@ const update = async (request, response) => {
 const clear = async (request, response) =>  {
   try {
     const { id } = request.params
-     await TechMaromba.findyByIdAndDelete(id)
+     await TechMaromba.findByIdAndDelete(id)
 
     response.status(200).json({message: `${id} foi deletada`})
   } catch (error) {
